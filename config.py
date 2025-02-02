@@ -15,11 +15,7 @@ PREMIUM_LIMIT = int(getenv("PREMIUM_LIMIT", "500"))
 WEBSITE_URL = getenv("WEBSITE_URL", "Modijiurl.com")
 AD_API = getenv("AD_API", "f2bb4074d89772fb1db2ed878a7b417d06c3e121")
 STRING = getenv("STRING", None)
-YT_COOKIES = getenv("YT_COOKIES", "# Netscape HTTP Cookie File
-# https://curl.haxx.se/rfc/cookie_spec.html
-# This is a generated file! Do not edit.
-
-.youtube.com	TRUE	/	TRUE	1737295949	GPS	1
+YT_COOKIES = getenv("YT_COOKIES", ".youtube.com	TRUE	/	TRUE	1737295949	GPS	1
 .youtube.com	TRUE	/	TRUE	0	YSC	VW83QNuF-rE
 .youtube.com	TRUE	/	TRUE	1752846149	__Secure-ROLLOUT_TOKEN	CPfXrsuG1-m97gEQ-L_JhfWBiwMY-L_JhfWBiwM%3D
 .youtube.com	TRUE	/	TRUE	1752846921	VISITOR_INFO1_LIVE	myhtpsWPqDg
