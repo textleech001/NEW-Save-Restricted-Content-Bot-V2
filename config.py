@@ -15,7 +15,7 @@ PREMIUM_LIMIT = int(getenv("PREMIUM_LIMIT", "500"))
 WEBSITE_URL = getenv("WEBSITE_URL", "Modijiurl.com")
 AD_API = getenv("AD_API", "f2bb4074d89772fb1db2ed878a7b417d06c3e121")
 STRING = getenv("STRING", None)
-YT_COOKIES = getenv("YT_COOKIES", ".youtube.com	TRUE	/	TRUE	1737295949	GPS	1
+YT_COOKIES = getenv("YT_COOKIES", .youtube.com	TRUE	/	TRUE	1737295949	GPS	1
 .youtube.com	TRUE	/	TRUE	0	YSC	VW83QNuF-rE
 .youtube.com	TRUE	/	TRUE	1752846149	__Secure-ROLLOUT_TOKEN	CPfXrsuG1-m97gEQ-L_JhfWBiwMY-L_JhfWBiwM%3D
 .youtube.com	TRUE	/	TRUE	1752846921	VISITOR_INFO1_LIVE	myhtpsWPqDg
@@ -41,5 +41,5 @@ YT_COOKIES = getenv("YT_COOKIES", ".youtube.com	TRUE	/	TRUE	1737295949	GPS	1
 .youtube.com	TRUE	/	FALSE	1737294939	ST-1m6g1yy	csn=Dg4NcfU6Rbf1WZPq&itct=CDwQ_FoYBCITCMrUlfj3gYsDFSxAnQkdwi4blzIGc2VhcmNoUgRodXNumgEDEPQk
 .youtube.com	TRUE	/	FALSE	1737294956	ST-1ik88wt	csn=Xtklow2p9tb0F1us&itct=CIABEPxaGAEiEwio8Lf694GLAxUQcp0JHYPlNroyB3JlbGF0ZWRInaab4-Okp99smgEFCAEQ-B0%3D
 .youtube.com	TRUE	/	FALSE	1737294958	ST-19q4rtd	csn=Xtklow2p9tb0F1us&itct=CJcBEOqeBBgBIhMIqPC3-veBiwMVEHKdCR2D5Ta6
-")
+)
 INSTA_COOKIES = getenv("INSTA_COOKIES", None)
