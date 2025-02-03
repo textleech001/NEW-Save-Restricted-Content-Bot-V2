@@ -49,12 +49,12 @@ def get_readable_file_size(size_in_bytes) -> str:
     try:
         return f'{round(size_in_bytes, 2)}{SIZE_UNITS[index]}'
     except IndexError:
-        return 'File too large'
+        return 'File too large🤨'
 
 
 @gagan.on(events.NewMessage(incoming=True, pattern='/speedtest'))
 async def speedtest(event):
-    speed = await event.reply("Running Speed Test. Wait about some secs.")  #edit telethon
+    speed = await event.reply("🏴‍☠️Running Speed Test🚀 ruko zara Sabar karo😁.")  #edit telethon
     test = Speedtest()
     test.get_best_server()
     test.download()
@@ -85,7 +85,7 @@ async def speedtest(event):
 ├ <b>Country:</b> <code>{result['client']['country']}</code>
 ├ <b>ISP:</b> <code>{result['client']['isp']}</code>
 ├ <b>ISP Rating:</b> <code>{result['client']['isprating']}</code>
-╰ <b>Powered by Bhardwaj Bhavit</b> 
+╰ <b>Powered by **__🍁Bhardwaj Bhavit🍁__**</b> 
 '''
     try:
         await event.reply(string_speed,file=path,parse_mode='html')
