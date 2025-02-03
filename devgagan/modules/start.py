@@ -35,25 +35,25 @@ async def set(_, message):
         BotCommand("batch", "🫠 Extract in bulk"),
         BotCommand("login", "🔑 Get into the bot"),
         BotCommand("logout", "🚪 Get out of the bot"),
-        BotCommand("token", "🎲 Get 3 hours free access"),
+        BotCommand("token", "🚨🏴‍☠️ Get 3 hours PREMIUM👑 FREE"),
         BotCommand("adl", "👻 Download audio from 30+ sites"),
         BotCommand("dl", "💀 Download videos from 30+ sites"),
-        BotCommand("freez", "🧊 Remove all expired user"),
+        BotCommand("freez", "🧊 Remove all expired user (Owners Only😭)"),
         BotCommand("pay", "₹ Pay now to get subscription"),
         BotCommand("status", "⟳ Refresh Payment status"),
-        BotCommand("transfer", "💘 Gift premium to others"),
+        BotCommand("transfer", "💘 Gift premium to your GirlFriend😉"),
         BotCommand("myplan", "⌛ Get your plan details"),
-        BotCommand("add", "➕ Add user to premium"),
-        BotCommand("rem", "➖ Remove from premium"),
+        BotCommand("add", "➕ Add user to premium(Ownres Only😭)"),
+        BotCommand("rem", "➖ Remove from premium(Ownres Only😭)"),
         BotCommand("session", "🧵 Generate Pyrogramv2 session"),
         BotCommand("settings", "⚙️ Personalize things"),
-        BotCommand("stats", "📊 Get stats of the bot"),
+        BotCommand("stats", "📊 Get stats of the bot(Ownres Only😭)"),
         BotCommand("plan", "🗓️ Check our premium plans"),
-        BotCommand("terms", "🥺 Terms and conditions"),
+        BotCommand("terms", "📜 Terms and conditions"),
         BotCommand("speedtest", "🚅 Speed of server"),
-        BotCommand("get", "🗄️ Get all user IDs"),
-        BotCommand("lock", "🔒 Protect channel from extraction"),
-        BotCommand("gcast", "⚡ Broadcast message to bot users"),
+        BotCommand("get", "🗄️ Get all user IDs(Ownres Only😭)"),
+        BotCommand("lock", "🔒 Protect channel from extraction(Ownres Only😭)"),
+        BotCommand("gcast", "⚡ Broadcast message to bot users(Ownres Only😭)"),
         BotCommand("help", "❓ If you're a noob, still!"),
         BotCommand("cancel", "🚫 Cancel batch process")
     ])
@@ -65,52 +65,52 @@ async def set(_, message):
  
 help_pages = [
     (
-        "📝 **Bot Commands Overview (1/2)**:\n\n"
+        "✨➰**Bot Commands Overview (1/2)**:\n\n"
         "1. **/add userID**\n"
-        "> Add user to premium (Owner only)\n\n"
+        "> Add user to Premium✔ (Owner only😭)\n\n"
         "2. **/rem userID**\n"
-        "> Remove user from premium (Owner only)\n\n"
+        "> Remove user from Premium❗ (Owner only😭)\n\n"
         "3. **/transfer userID**\n"
-        "> Transfer premium to your beloved major purpose for resellers (Premium members only)\n\n"
+        "> Transfer premium to your GirlFriend 😉 (Premium members only👑)\n\n"
         "4. **/get**\n"
-        "> Get all user IDs (Owner only)\n\n"
+        "> Get all user IDs🎗 (Owner only😭)\n\n"
         "5. **/lock**\n"
-        "> Lock channel from extraction (Owner only)\n\n"
+        "> Lock channel from extraction🔏 (Owner only😭)\n\n"
         "6. **/dl link**\n"
-        "> Download videos (Not available in v3 if you are using)\n\n"
+        "> Download videos🎥 (💀use YT video link or any Download Link🤞)\n\n"
         "7. **/adl link**\n"
-        "> Download audio (Not available in v3 if you are using)\n\n"
+        "> Download audio🔊 (👻use YT Song link or any Download Link🤞)\n\n"
         "8. **/login**\n"
-        "> Log into the bot for private channel access\n\n"
+        "> Log in📎 for private channel🔏 access\n\n"
         "9. **/batch**\n"
-        "> Bulk extraction for posts (After login)\n\n"
+        "> for Download Multi Post at once📜 (After login🔗)\n\n"
     ),
     (
-        "📝 **Bot Commands Overview (2/2)**:\n\n"
+        "✨➰ **Bot Commands Overview (2/2)**:\n\n"
         "10. **/logout**\n"
-        "> Logout from the bot\n\n"
+        "> Logout from the bot⛓⚔\n\n"
         "11. **/stats**\n"
-        "> Get bot stats\n\n"
+        "> Get bot stats🃏\n\n"
         "12. **/plan**\n"
-        "> Check premium plans\n\n"
+        "> Check premium plans👑\n\n"
         "13. **/speedtest**\n"
-        "> Test the server speed (not available in v3)\n\n"
+        "> Test the server speed🚀 \n\n"
         "14. **/terms**\n"
-        "> Terms and conditions\n\n"
+        "> Terms and conditions📜\n\n"
         "15. **/cancel**\n"
-        "> Cancel ongoing batch process\n\n"
+        "> Cancel ongoing batch process🚫❌\n\n"
         "16. **/myplan**\n"
-        "> Get details about your plans\n\n"
+        "> Get details about your plans📧\n\n"
         "17. **/session**\n"
-        "> Generate Pyrogram V2 session\n\n"
-        "18. **/settings**\n"
-        "> 1. SETCHATID : To directly upload in channel or group or user's dm use it with -100[chatID]\n"
-        "> 2. SETRENAME : To add custom rename tag or username of your channels\n"
-        "> 3. CAPTION : To add custom caption\n"
-        "> 4. REPLACEWORDS : Can be used for words in deleted set via REMOVE WORDS\n"
-        "> 5. RESET : To set the things back to default\n\n"
-        "> You can set CUSTOM THUMBNAIL, PDF WATERMARK, VIDEO WATERMARK, SESSION-based login, etc. from settings\n\n"
-        "**__Powered by BHardwaj Bhavit__**"
+        "> Generate Pyrogram V2 session🧵\n\n"
+        "18. **/settings ⚙**\n"
+        "> 1. SETCHATID : 🎗To directly upload in channel or group or user's dm use it with -100[chatID]🎗\n"
+        "> 2. SETRENAME : 🔺To add custom Rename tag or username of your Channels🔻\n"
+        "> 3. CAPTION : ➰To add custom caption➰\n"
+        "> 4. REPLACEWORDS : 〽Can be used for words in deleted set via REMOVE WORDS〽\n"
+        "> 5. RESET : ☣To Reset Settings⚙ Default☣\n\n"
+        "> ⚜You can set ✔~CUSTOM THUMBNAIL~, ✔~PDF WATERMARK~, ✔~VIDEO WATERMARK~, ✔~SESSION-based login~, etc. from settings⚙\n\n"
+        "**__Powered by 🏴‍☠️✨Bhardwaj Bhavit✨🏴‍☠️__**"
     )
 ]
  
@@ -120,8 +120,8 @@ async def send_or_edit_help_page(_, message, page_number):
         return
  
      
-    prev_button = InlineKeyboardButton("◀️ Previous", callback_data=f"help_prev_{page_number}")
-    next_button = InlineKeyboardButton("Next ▶️", callback_data=f"help_next_{page_number}")
+    prev_button = InlineKeyboardButton("⬅ Previous", callback_data=f"help_prev_{page_number}")
+    next_button = InlineKeyboardButton("Next ➡", callback_data=f"help_next_{page_number}")
  
      
     buttons = []
@@ -193,10 +193,10 @@ async def terms(client, message):
 @app.on_message(filters.command("plan") & filters.private)
 async def plan(client, message):
     plan_text = (
-        "> 💰 **Premium Price**:\n\n Starting from 10Rupees or 20 INR accepted via **__all Payments Option__** (terms and conditions apply).\n"
-        "📥 **Download Limit**: Users can download up to 100,000 files in a single batch command.\n"
-        "🛑 **Batch**: You will get two modes /bulk and /batch.\n"
-        "   - Users are advised to wait for the process to automatically cancel before proceeding with any downloads or uploads.\n\n"
+        "> 💰 **Premium Price**:\n\n 🤞Starting from **__~10₹~ or ~20₹~__**  accepted via **__all Payments Option__** (T&C apply).🤞\n\n"
+        "📥 👻**Download Limit**: Users can download Multipel files in a single batch command.👻\n\n"
+        "🛑 🌻**Batch**: You will get and /batch. mode🌻\n\n"
+        "   🍂- Users are advised to wait for the process to automatically cancel before proceeding with any downloads or uploads.🍂\n\n"
         "📜 **Terms and Conditions**: For further details and complete terms and conditions, please send /terms.\n"
     )
      
@@ -212,10 +212,10 @@ async def plan(client, message):
 @app.on_callback_query(filters.regex("see_plan"))
 async def see_plan(client, callback_query):
     plan_text = (
-        "> 💰**Premium Price**\n\n Starting from 10Rupees or 20 INR accepted via **__all Payment Options__** (terms and conditions apply).\n"
-        "📥 **Download Limit**: Users can download up to 100,000 files in a single batch command.\n"
-        "🛑 **Batch**: You will get two modes /bulk and /batch.\n"
-        "   - Users are advised to wait for the process to automatically cancel before proceeding with any downloads or uploads.\n\n"
+        "> 💰**Premium Price**\n\n 🤞Starting from **__~10₹~ or ~20₹~__** accepted via **__all Payment Options__** (T&C apply).🤞\n\n"
+        "📥 👻**Download Limit**: Users can download Multipel files in a single batch command.👻\n\n"
+        "🛑 🌻**Batch**: You will get and /batch. mode🌻\n\n"
+        "   🍂- Users are advised to wait for the process to automatically cancel before proceeding with any downloads or uploads.🍂\n\n"
         "📜 **Terms and Conditions**: For further details and complete terms and conditions, please send /terms or click See Terms👇\n"
     )
      
