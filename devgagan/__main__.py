@@ -41,9 +41,9 @@ async def devggn_boot():
 📝 Description: A Pyrogram bot for downloading files from Telegram channels or groups 
                 and uploading them back to Telegram.
 👨‍💻 Author: Bhardwaj
-🌐 GitHub: https://github.com/devgaganin/
+🌐 GitHub: https://github.com/BhardwajBhavit
 📬 Telegram: https://t.me/BhardwajBhavit
-▶️ YouTube: https://youtube.com/@dev_gagan
+▶️ YouTube: https://youtube.com/@BhardwajBhavit
 🗓️ Created: 2025-01-11
 🔄 Last Modified: 2025-01-11
 🛠️ Version: 2.0.5
@@ -52,7 +52,7 @@ async def devggn_boot():
 """)
 
     asyncio.create_task(schedule_expiry_check())
-    print("Auto removal started ...")
+    print("💢Auto removal started ...💥")
     await idle()
     print("Bot stopped...")
 
