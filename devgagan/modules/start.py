@@ -27,7 +27,7 @@ from pyrogram.types import BotCommand, InlineKeyboardButton, InlineKeyboardMarku
 @app.on_message(filters.command("set"))
 async def set(_, message):
     if message.from_user.id not in OWNER_ID:
-        await message.reply("You are not authorized to use this command.")
+        await message.reply("Owner ko karne do Bhai💀")
         return
      
     await app.set_bot_commands([
