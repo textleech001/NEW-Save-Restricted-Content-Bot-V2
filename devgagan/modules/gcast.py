@@ -43,7 +43,7 @@ async def broadcast(_, message):
     if not message.reply_to_message:
         await message.reply_text("♻ʀᴇᴘʟʏ to a ᴍessage to ʙʀᴏᴀᴅᴄᴀsᴛ it.❄")
         return    
-    exmsg = await message.reply_text("🐱‍👤sᴛᴀʀᴛᴇᴅ ʙʀᴏᴀᴅᴄᴀsᴛɪɴɢ🏴‍☠️!")
+    exmsg = await message.reply_text("⚡sᴛᴀʀᴛᴇᴅ ʙʀᴏᴀᴅᴄᴀsᴛɪɴɢ🏴‍☠️!")
     all_users = (await get_users()) or {}
     done_users = 0
     failed_users = 0
