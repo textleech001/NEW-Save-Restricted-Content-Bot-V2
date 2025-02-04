@@ -38,7 +38,7 @@ def d_thumbnail(thumbnail_url, save_path):
                 f.write(chunk)
         return save_path
     except requests.exceptions.RequestException as e:
-        logger.error(f"Failed to download thumbnail: {e}")
+        logger.error(f"⚠Failed to download thumbnail❗: {e}")
         return None
 
 async def download_thumbnail_async(url, path):
@@ -76,13 +76,13 @@ async def process_audio(client, event, url, cookies_path=None):
     }
     prog = None
 
-    progress_message = await event.reply("**__☣Starting audio extraction...🏴‍☠️__**")
+    progress_message = await event.reply("**__🍁Starting audio extraction...🏴‍☠️__**")
 
     try:
         info_dict = await extract_audio_async(ydl_opts, url)
         title = info_dict.get('title', 'Extracted Audio')
 
-        await progress_message.edit("**__☣Editing metadata...🏴‍☠️__**")
+        await progress_message.edit("**__🍁Editing metadata...🏴‍☠️__**")
         if os.path.exists(download_path):
             def edit_metadata():
                 audio_file = MP3(download_path, ID3=ID3)
@@ -159,7 +159,7 @@ async def process_video(client, event, url, cookies_path=None, check_duration_an
             return
 
         await asyncio.to_thread(download_video, url, ydl_opts)
-        title = info_dict.get('title', 'Powered by Pragyan')
+        title = info_dict.get('title', 'Powered by 🍁Bhardwaj🍁')
         k = video_metadata(download_path)
         W = k['width']
         H = k['height']
@@ -184,7 +184,7 @@ async def process_video(client, event, url, cookies_path=None, check_duration_an
         chat_id = event.chat_id
         if os.path.exists(download_path):
             await progress_message.delete()
-            prog = await client.send_message(chat_id, "**🚀__Starting Upload...⚡^_^__**")
+            prog = await client.send_message(chat_id, "**__🚀Starting Upload🚀...⚡^_^__**")
             uploaded = await fast_upload(
                 client, download_path,
                 reply=prog,
@@ -224,7 +224,7 @@ async def process_video(client, event, url, cookies_path=None, check_duration_an
 async def handler(event):
     user_id = event.sender_id
     if user_id in ongoing_downloads:
-        await event.reply("**☣You already have an ongoing download.☢ Please wait until it completes!☣**")
+        await event.reply("**⚠You already have an ongoing download.☢ Please wait until it completes!⚔**")
         return
 
     if len(event.message.text.split()) < 2:
@@ -246,7 +246,7 @@ async def handler(event):
     user_id = event.sender_id
 
     if user_id in ongoing_downloads:
-        await event.reply("**☣You already have an ongoing ytdlp download.☢ Please wait until it completes!☣**")
+        await event.reply("**⚔You already have an ongoing ytdlp download.☢ Please wait until it completes!⚔**")
         return
 
     if len(event.message.text.split()) < 2:
