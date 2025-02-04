@@ -39,14 +39,14 @@ async def subscribe(app, message):
       try:
          user = await app.get_chat_member(update_channel, message.from_user.id)
          if user.status == "kicked":
-            await message.reply_text("You are Banned. Contact -- @BhardwajBhavit")
+            await message.reply_text("❗You are Banned🚫. ⚜Contact -- @BhardwajBhavit")
             return 1
       except UserNotParticipant:
-        caption = f"🤞Join our channel to use the bot✔"
-        await message.reply_photo(photo="https://envs.sh/mT_.jpg",caption=caption, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Join Now...", url=f"{url}")]]))
+        caption = f"🤞👻Join our channel to use the bot☣✔"
+        await message.reply_photo(photo="https://envs.sh/mT_.jpg",caption=caption, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("✨Join Now...🐱‍👤✔", url=f"{url}")]]))
         return 1
       except Exception:
-         await message.reply_text("Something Went Wrong. Contact us @BhardwajBhavit ...")
+         await message.reply_text("⚠Something Went Wrong❗. ⚜Contact us 🏴‍☠️@BhardwajBhavit ...")
          return 1
 async def get_seconds(time_string):
     def extract_value_and_unit(ts):
@@ -104,8 +104,8 @@ async def progress_bar(current, total, ud_type, message, start):
         estimated_total_time = TimeFormatter(milliseconds=estimated_total_time)
 
         progress = "{0}{1}".format(
-            ''.join(["♦" for i in range(math.floor(percentage / 10))]),
-            ''.join(["◇" for i in range(10 - math.floor(percentage / 10))]))
+            ''.join(["👻" for i in range(math.floor(percentage / 10))]),
+            ''.join(["〰" for i in range(10 - math.floor(percentage / 10))]))
 
         tmp = progress + PROGRESS_BAR.format( 
             round(percentage, 2),
@@ -153,16 +153,16 @@ def convert(seconds):
 async def userbot_join(userbot, invite_link):
     try:
         await userbot.join_chat(invite_link)
-        return "Successfully joined the Channel"
+        return "✨✔Successfully joined the Channel🤞👻"
     except UserAlreadyParticipant:
-        return "User is already a participant."
+        return "✨User is already a participant✔."
     except (InviteHashInvalid, InviteHashExpired):
-        return "Could not join. Maybe your link is expired or Invalid."
+        return "⚠Could not join❗.link is expired or Invalid❗.🌻  /start again to Join⚡"
     except FloodWait:
-        return "Too many requests, try again later."
+        return "⚠Too many requests❗, try again later😕."
     except Exception as e:
         print(e)
-        return "Could not join, try joining manually."
+        return "🤨Could not join,😕 try joining manually. https://t.me/+FjnlaBYf-u8yNjU1"
 def get_link(string):
     regex = r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))"
     url = re.findall(regex,string)   
@@ -197,7 +197,7 @@ def video_metadata(file):
         return {'width': width, 'height': height, 'duration': duration}
 
     except Exception as e:
-        print(f"Error in video_metadata: {e}")
+        print(f"⚠Error in video_metadata❗: {e}")
         return default_values
 
 def hhmmss(seconds):
@@ -239,18 +239,18 @@ async def progress_callback(current, total, progress_message):
     if current_time - last_update_time >= 10 or percent % 10 == 0:
         completed_blocks = int(percent // 10)
         remaining_blocks = 10 - completed_blocks
-        progress_bar = "♦" * completed_blocks + "◇" * remaining_blocks
+        progress_bar = "👻" * completed_blocks + "〰" * remaining_blocks
         current_mb = current / (1024 * 1024)  
         total_mb = total / (1024 * 1024)      
         await progress_message.edit(
     f"╭──────────────────╮\n"
-    f"│        **__Uploading...__**       \n"
+    f"│        **__🚀Uploading...🚀__**       \n"
     f"├──────────\n"
     f"│ {progress_bar}\n\n"
     f"│ **__Progress:__** {percent:.2f}%\n"
     f"│ **__Uploaded:__** {current_mb:.2f} MB / {total_mb:.2f} MB\n"
     f"╰──────────────────╯\n\n"
-    f"**__Powered by BhardwajBhavit__**"
+    f"**__Powered by 🐱‍👤☣BhardwajBhavit☣🐱‍👤__**"
         )
 
         last_update_time = current_time
@@ -270,8 +270,8 @@ async def prog_bar(current, total, ud_type, message, start):
         estimated_total_time = TimeFormatter(milliseconds=estimated_total_time)
 
         progress = "{0}{1}".format(
-            ''.join(["♦" for i in range(math.floor(percentage / 10))]),
-            ''.join(["◇" for i in range(10 - math.floor(percentage / 10))]))
+            ''.join(["👻" for i in range(math.floor(percentage / 10))]),
+            ''.join(["〰" for i in range(10 - math.floor(percentage / 10))]))
 
         tmp = progress + PROGRESS_BAR.format( 
             round(percentage, 2),
