@@ -41,9 +41,9 @@ async def send_msg(user_id, message):
 @app.on_message(filters.command("gcast") & filters.user(OWNER_ID))
 async def broadcast(_, message):
     if not message.reply_to_message:
-        await message.reply_text("ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ ʙʀᴏᴀᴅᴄᴀsᴛ ɪᴛ.")
+        await message.reply_text("♻ʀᴇᴘʟʏ to a ᴍessage to ʙʀᴏᴀᴅᴄᴀsᴛ it.❄")
         return    
-    exmsg = await message.reply_text("sᴛᴀʀᴛᴇᴅ ʙʀᴏᴀᴅᴄᴀsᴛɪɴɢ!")
+    exmsg = await message.reply_text("🐱‍👤sᴛᴀʀᴛᴇᴅ ʙʀᴏᴀᴅᴄᴀsᴛɪɴɢ🏴‍☠️!")
     all_users = (await get_users()) or {}
     done_users = 0
     failed_users = 0
@@ -58,11 +58,11 @@ async def broadcast(_, message):
             failed_users += 1
     if failed_users == 0:
         await exmsg.edit_text(
-            f"**sᴜᴄᴄᴇssғᴜʟʟʏ ʙʀᴏᴀᴅᴄᴀsᴛɪɴɢ ✅**\n\n**sᴇɴᴛ ᴍᴇssᴀɢᴇ ᴛᴏ** `{done_users}` **ᴜsᴇʀs**",
+            f"**sᴜᴄᴄᴇssғᴜʟʟʏ ʙʀᴏᴀᴅᴄᴀsᴛɪɴɢ ✨✔**\n\n**🎗sᴇɴᴛ ᴍᴇssᴀɢᴇ ᴛᴏ** `{done_users}` **ᴜsᴇʀs🎗**",
         )
     else:
         await exmsg.edit_text(
-            f"**sᴜᴄᴄᴇssғᴜʟʟʏ ʙʀᴏᴀᴅᴄᴀsᴛɪɴɢ ✅**\n\n**sᴇɴᴛ ᴍᴇssᴀɢᴇ ᴛᴏ** `{done_users}` **ᴜsᴇʀs**\n\n**ɴᴏᴛᴇ:-** `ᴅᴜᴇ ᴛᴏ sᴏᴍᴇ ɪssᴜᴇ ᴄᴀɴ'ᴛ ᴀʙʟᴇ ᴛᴏ ʙʀᴏᴀᴅᴄᴀsᴛ` `{failed_users}` **ᴜsᴇʀs**",
+            f"**sᴜᴄᴄᴇssғᴜʟʟʏ ʙʀᴏᴀᴅᴄᴀsᴛɪɴɢ ✨✔**\n\n**🎗sᴇɴᴛ ᴍᴇssᴀɢᴇ ᴛᴏ** `{done_users}` **ᴜsᴇʀs🎗**\n\n**ɴᴏᴛᴇ:-** `⚠ᴅue to some ɪssᴜᴇ can't able to ʙʀᴏᴀᴅᴄᴀsᴛ❗` `{failed_users}` **ᴜsᴇʀs🔺**",
         )
 
 
@@ -74,7 +74,7 @@ async def announced(_, message):
     if message.reply_to_message:
       to_send=message.reply_to_message.id
     if not message.reply_to_message:
-      return await message.reply_text("Reply To Some Post To Broadcast")
+      return await message.reply_text("♻Reply To Some Post To Broadcast❄")
     users = await get_users() or []
     print(users)
     failed_user = 0
@@ -88,11 +88,11 @@ async def announced(_, message):
           
     if failed_users == 0:
         await exmsg.edit_text(
-            f"**sᴜᴄᴄᴇssғᴜʟʟʏ ʙʀᴏᴀᴅᴄᴀsᴛɪɴɢ ✅**\n\n**sᴇɴᴛ ᴍᴇssᴀɢᴇ ᴛᴏ** `{done_users}` **ᴜsᴇʀs**",
+            f"**sᴜᴄᴄᴇssғᴜʟʟʏ ʙʀᴏᴀᴅᴄᴀsᴛɪɴɢ ✨✔**\n\n**sᴇɴᴛ ᴍᴇssᴀɢᴇ ᴛᴏ** `{done_users}` **ᴜsᴇʀs**➰",
         )
     else:
         await exmsg.edit_text(
-            f"**sᴜᴄᴄᴇssғᴜʟʟʏ ʙʀᴏᴀᴅᴄᴀsᴛɪɴɢ ✅**\n\n**sᴇɴᴛ ᴍᴇssᴀɢᴇ ᴛᴏ** `{done_users}` **ᴜsᴇʀs**\n\n**ɴᴏᴛᴇ:-** `ᴅᴜᴇ ᴛᴏ sᴏᴍᴇ ɪssᴜᴇ ᴄᴀɴ'ᴛ ᴀʙʟᴇ ᴛᴏ ʙʀᴏᴀᴅᴄᴀsᴛ` `{failed_users}` **ᴜsᴇʀs**",
+            f"**sᴜᴄᴄᴇssғᴜʟʟʏ ʙʀᴏᴀᴅᴄᴀsᴛɪɴɢ ✨✔**\n\n**sᴇɴᴛ ᴍᴇssᴀɢᴇ ᴛᴏ** `{done_users}` **ᴜsᴇʀs**➰\n\n**ɴᴏᴛᴇ:-** `ᴅue to some ɪssᴜᴇ can't able to ʙʀᴏᴀᴅᴄᴀsᴛ❗` `{failed_users}` **ᴜsᴇʀs🔺**",
         )
 
 
