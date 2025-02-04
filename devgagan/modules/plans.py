@@ -33,13 +33,13 @@ async def remove_premium(client, message):
         
         if data and data.get("_id"):
             await plans_db.remove_premium(user_id)
-            await message.reply_text("ᴜꜱᴇʀ ʀᴇᴍᴏᴠᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ !")
+            await message.reply_text("☣Premium👑 Removed ⛔💀 !")
             await client.send_message(
                 chat_id=user_id,
-                text=f"<b>ʜᴇʏ {user.mention},\n\nʏᴏᴜʀ ᴘʀᴇᴍɪᴜᴍ ᴀᴄᴄᴇss ʜᴀs ʙᴇᴇɴ ʀᴇᴍᴏᴠᴇᴅ.\nᴛʜᴀɴᴋ ʏᴏᴜ ꜰᴏʀ ᴜsɪɴɢ ᴏᴜʀ sᴇʀᴠɪᴄᴇ 😊.</b>"
+                text=f"<b>ʜᴇʏ {user.mention},\n\n☣ʏᴏᴜʀ ᴘʀᴇᴍɪᴜᴍ👑 access ʀᴇᴍᴏᴠᴇᴅ⛔💀.\nBuy it again YA use /token for free Premium👑🤞 .</b>"
             )
         else:
-            await message.reply_text("ᴜɴᴀʙʟᴇ ᴛᴏ ʀᴇᴍᴏᴠᴇ ᴜꜱᴇᴅ !\nᴀʀᴇ ʏᴏᴜ ꜱᴜʀᴇ, ɪᴛ ᴡᴀꜱ ᴀ ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀ ɪᴅ ?")
+            await message.reply_text("ᴜɴᴀʙʟᴇ ᴛᴏ ʀᴇᴍᴏᴠᴇ ᴜꜱᴇᴅ ❗\nᴀre you sure, it was a Premium user❓🤨 ?")
     else:
         await message.reply_text("ᴜꜱᴀɢᴇ : /rem user_id") 
 
@@ -65,9 +65,9 @@ async def myplan(client, message):
             
         
         time_left_str = f"{days} ᴅᴀʏꜱ, {hours} ʜᴏᴜʀꜱ, {minutes} ᴍɪɴᴜᴛᴇꜱ"
-        await message.reply_text(f"⚜️ ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀ ᴅᴀᴛᴀ :\n\n👤 ᴜꜱᴇʀ : {user}\n⚡ ᴜꜱᴇʀ ɪᴅ : <code>{user_id}</code>\n⏰ ᴛɪᴍᴇ ʟᴇꜰᴛ : {time_left_str}\n⌛️ ᴇxᴘɪʀʏ ᴅᴀᴛᴇ : {expiry_str_in_ist}")   
+        await message.reply_text(f"⚜️ ᴘʀᴇᴍɪᴜᴍ👑 user ᴅata :\n\n👤 ᴜꜱᴇʀ : {user}\n⚡ ᴜꜱᴇʀ ɪᴅ : <code>{user_id}</code>\n⏰ ᴛɪᴍᴇ ʟᴇꜰᴛ : {time_left_str}\n⌛️ ᴇxᴘɪʀʏ ᴅᴀᴛᴇ : {expiry_str_in_ist}")   
     else:
-        await message.reply_text(f"ʜᴇʏ {user},\n\nʏᴏᴜ ᴅᴏ ɴᴏᴛ ʜᴀᴠᴇ ᴀɴʏ ᴀᴄᴛɪᴠᴇ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴs")
+        await message.reply_text(f"ʜᴇʏ {user},\n\nPurchase Premium👑 to check your Plan😭")
         
 
 
@@ -92,9 +92,9 @@ async def get_premium(client, message):
             
             
             time_left_str = f"{days} days, {hours} hours, {minutes} minutes"
-            await message.reply_text(f"⚜️ ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀ ᴅᴀᴛᴀ :\n\n👤 ᴜꜱᴇʀ : {user.mention}\n⚡ ᴜꜱᴇʀ ɪᴅ : <code>{user_id}</code>\n⏰ ᴛɪᴍᴇ ʟᴇꜰᴛ : {time_left_str}\n⌛️ ᴇxᴘɪʀʏ ᴅᴀᴛᴇ : {expiry_str_in_ist}")
+            await message.reply_text(f"⚜️ 👑ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀ ᴅᴀᴛᴀ :\n\n👤 ᴜꜱᴇʀ : {user.mention}\n⚡ ᴜꜱᴇʀ ɪᴅ : <code>{user_id}</code>\n⏰ ᴛɪᴍᴇ ʟᴇꜰᴛ : {time_left_str}\n⌛️ ᴇxᴘɪʀʏ ᴅᴀᴛᴇ : {expiry_str_in_ist}")
         else:
-            await message.reply_text("ɴᴏ ᴀɴʏ ᴘʀᴇᴍɪᴜᴍ ᴅᴀᴛᴀ ᴏꜰ ᴛʜᴇ ᴡᴀꜱ ꜰᴏᴜɴᴅ ɪɴ ᴅᴀᴛᴀʙᴀꜱᴇ !")
+            await message.reply_text("No Premium👑 Found❗ you Need to Purchase first💀 !")
     else:
         await message.reply_text("ᴜꜱᴀɢᴇ : /check user_id")
 
@@ -114,16 +114,16 @@ async def give_premium_cmd_handler(client, message):
             data = await plans_db.check_premium(user_id)
             expiry = data.get("expire_date")   
             expiry_str_in_ist = expiry.astimezone(pytz.timezone("Asia/Kolkata")).strftime("%d-%m-%Y\n⏱️ ᴇxᴘɪʀʏ ᴛɪᴍᴇ : %I:%M:%S %p")         
-            await message.reply_text(f"ᴘʀᴇᴍɪᴜᴍ ᴀᴅᴅᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ✅\n\n👤 ᴜꜱᴇʀ : {user.mention}\n⚡ ᴜꜱᴇʀ ɪᴅ : <code>{user_id}</code>\n⏰ ᴘʀᴇᴍɪᴜᴍ ᴀᴄᴄᴇꜱꜱ : <code>{time}</code>\n\n⏳ ᴊᴏɪɴɪɴɢ ᴅᴀᴛᴇ : {current_time}\n\n⌛️ ᴇxᴘɪʀʏ ᴅᴀᴛᴇ : {expiry_str_in_ist} \n\n__**Powered by Team SPY__**", disable_web_page_preview=True)
+            await message.reply_text(f"ᴘʀᴇᴍɪᴜᴍ👑 Added..🎗 ✔\n\n👤 ᴜꜱᴇʀ : {user.mention}\n⚡ ᴜꜱᴇʀ ɪᴅ : <code>{user_id}</code>\n⏰ ᴘʀᴇᴍɪᴜᴍ ᴀᴄᴄᴇꜱꜱ : <code>{time}</code>\n\n⏳ ᴊᴏɪɴɪɴɢ ᴅᴀᴛᴇ : {current_time}\n\n⌛️ ᴇxᴘɪʀʏ ᴅᴀᴛᴇ : {expiry_str_in_ist} \n\n__**Powered by ☣🍁BhardwajBhavit🏴‍☠️🍁__**", disable_web_page_preview=True)
             await client.send_message(
                 chat_id=user_id,
-                text=f"👋 ʜᴇʏ {user.mention},\nᴛʜᴀɴᴋ ʏᴏᴜ ꜰᴏʀ ᴘᴜʀᴄʜᴀꜱɪɴɢ ᴘʀᴇᴍɪᴜᴍ.\nᴇɴᴊᴏʏ !! ✨🎉\n\n⏰ ᴘʀᴇᴍɪᴜᴍ ᴀᴄᴄᴇꜱꜱ : <code>{time}</code>\n⏳ ᴊᴏɪɴɪɴɢ ᴅᴀᴛᴇ : {current_time}\n\n⌛️ ᴇxᴘɪʀʏ ᴅᴀᴛᴇ : {expiry_str_in_ist}", disable_web_page_preview=True              
+                text=f"👋 ʜᴇʏ {user.mention},\n➰ᴛʜᴀɴᴋ's For ᴘurchasing ᴘʀᴇᴍɪᴜᴍ👑.\nᴇɴᴊᴏʏ !! ✨🎉\n\n⏰ ᴘʀᴇᴍɪᴜᴍ ᴀᴄᴄᴇꜱꜱ : <code>{time}</code>\n⏳ ᴊᴏɪɴɪɴɢ ᴅᴀᴛᴇ : {current_time}\n\n⌛️ ᴇxᴘɪʀʏ ᴅᴀᴛᴇ : {expiry_str_in_ist}", disable_web_page_preview=True              
             )
                     
         else:
-            await message.reply_text("Invalid time format. Please use '1 day for days', '1 hour for hours', or '1 min for minutes', or '1 month for months' or '1 year for year'")
+            await message.reply_text("Invalid time format.❗ Please use '1 day for days', '1 hour for hours', or '1 min for minutes', or '1 month for months' or '1 year for year'🌻")
     else:
-        await message.reply_text("Usage : /add user_id time (e.g., '1 day for days', '1 hour for hours', or '1 min for minutes', or '1 month for months' or '1 year for year')")
+        await message.reply_text("Usage : /add user_id time (e.g., '1 day for days', '1 hour for hours', or '1 min for minutes', or '1 month for months' or '1 year for year'🌻)")
 
 
 @app.on_message(filters.command("transfer"))
@@ -155,29 +155,29 @@ async def transfer_premium(client, message):
             
             # Confirmation message to the sender
             await message.reply_text(
-                f"✅ **Premium Plan Transferred Successfully!**\n\n"
-                f"👤 **From:** {sender_user.mention}\n"
-                f"👤 **To:** {new_user.mention}\n"
+                f"👻 **Premium👑 Plan Transferred Successfully!**\n\n"
+                f"🤴 **From:** {sender_user.mention}\n"
+                f"👸 **To:** {new_user.mention}\n"
                 f"⏳ **Expiry Date:** {expiry_str_in_ist}\n\n"
-                f"__Powered by BhardwajBhavit__ 🚀"
+                f"__Powered by ⚔🏴‍☠️BhardwajBhavit🏴‍☠️🍁__ 🚀"
             )
             
             # Notification to the new user
             await client.send_message(
                 chat_id=new_user_id,
                 text=(
-                    f"👋 **Hey {new_user.mention},**\n\n"
-                    f"🎉 **Your Premium Plan has been Transferred!**\n"
+                    f"👻 **Hey {new_user.mention},**\n\n"
+                    f"⚡ **Your Premium👑 Plan has been Transferred!**\n"
                     f"🛡️ **Transferred From:** {sender_user.mention}\n\n"
                     f"⏳ **Expiry Date:** {expiry_str_in_ist}\n"
                     f"📅 **Transferred On:** {current_time}\n\n"
-                    f"__Enjoy the Service!__ ✨"
+                    f"__Let's Enjoy💀!__ ✨"
                 )
             )
         else:
-            await message.reply_text("⚠️ **You are not a Premium user!**\n\nOnly Premium users can transfer their plans.")
+            await message.reply_text("☣ **First Buy Premium👑 !**\n\n❗Only Premium users can transfer plans💀.")
     else:
-        await message.reply_text("⚠️ **Usage:** /transfer user_id\n\nReplace `user_id` with the new user's ID.")
+        await message.reply_text("☣ **Usage:** /transfer user_id\n\nReplace `user_id` with the new user's ID🌩.")
 
 
 async def premium_remover():
@@ -196,8 +196,8 @@ async def premium_remover():
                 if expiry_date <= datetime.datetime.now():
                     name = user.first_name
                     await plans_db.remove_premium(user_id)
-                    await app.send_message(user_id, text=f"Hello {name}, your premium subscription has expired.")
-                    print(f"{name}, your premium subscription has expired.")
+                    await app.send_message(user_id, text=f"Hello {name}, your Premium👑 subscription has expired❗❗.")
+                    print(f"{name}, your Premium👑 subscription has expired❗❗.")
                     removed_users.append(f"{name} ({user_id})")
                 else:
                     name = user.first_name
@@ -231,12 +231,12 @@ async def premium_remover():
 async def refresh_users(_, message):
     removed_users, not_removed_users = await premium_remover()
     # Create a summary message
-    removed_text = "\n".join(removed_users) if removed_users else "No users removed."
-    not_removed_text = "\n".join(not_removed_users) if not_removed_users else "No users remaining with premium."
+    removed_text = "\n".join(removed_users) if removed_users else "No users removed🔺."
+    not_removed_text = "\n".join(not_removed_users) if not_removed_users else "No users remaining with premium✔⚡."
     summary = (
-        f"**Here is Summary...**\n\n"
-        f"> **Removed Users:**\n{removed_text}\n\n"
-        f"> **Not Removed Users:**\n{not_removed_text}"
+        f"**🍁Here is Summary🍁...**\n\n"
+        f"> **⛔Removed Users⛔:**\n{removed_text}\n\n"
+        f"> **♻Not Removed Users♻:**\n{not_removed_text}"
     )
     await message.reply(summary)
     
