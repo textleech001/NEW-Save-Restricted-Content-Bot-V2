@@ -84,9 +84,9 @@ async def token_handler(client, message):
         await message.reply_photo(
             image_url,
             caption=(
-                "Hi 👋 Welcome, Wanna intro...?\n\n"
-                "✳️ I can save posts from channels or groups where forwarding is off. I can download videos/audio from YT, INSTA, ... social platforms\n"
-                "✳️  use /token to use Premium for FREE send post link of a public channel. For private channels, do /login. Send /help to know more."
+                "Hi 🐱‍👤🏴‍☠️ Welcome, Wanna intro...?\n\n"
+                "☣⚔ I can save posts from channels or groups where Forwarding is OFF💀. I can download 🎥Videos 🔊Audio from YT, INSTA, ... social platforms\n\n"
+                "☣⚜  use  /token  to use Premium👑 for FREE \n\n ☣✨send post link of a public channel. For private channels, do /login.✨ \n\n Send /help to know more."
             ),
             reply_markup=keyboard
         )
