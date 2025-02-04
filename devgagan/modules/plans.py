@@ -33,10 +33,10 @@ async def remove_premium(client, message):
         
         if data and data.get("_id"):
             await plans_db.remove_premium(user_id)
-            await message.reply_text("☣Premium👑 Removed ⛔💀 !")
+            await message.reply_text("🍁Premium👑 Removed ⛔💀 !")
             await client.send_message(
                 chat_id=user_id,
-                text=f"<b>ʜᴇʏ {user.mention},\n\n☣ʏᴏᴜʀ ᴘʀᴇᴍɪᴜᴍ👑 access ʀᴇᴍᴏᴠᴇᴅ⛔💀.\nBuy it again YA use /token for free Premium👑🤞 .</b>"
+                text=f"<b>ʜᴇʏ {user.mention},\n\n🍁ʏᴏᴜʀ ᴘʀᴇᴍɪᴜᴍ👑 access ʀᴇᴍᴏᴠᴇᴅ⛔💀.\nBuy it again YA use /token for free Premium👑🤞 .</b>"
             )
         else:
             await message.reply_text("ᴜɴᴀʙʟᴇ ᴛᴏ ʀᴇᴍᴏᴠᴇ ᴜꜱᴇᴅ ❗\nᴀre you sure, it was a Premium user❓🤨 ?")
@@ -114,7 +114,7 @@ async def give_premium_cmd_handler(client, message):
             data = await plans_db.check_premium(user_id)
             expiry = data.get("expire_date")   
             expiry_str_in_ist = expiry.astimezone(pytz.timezone("Asia/Kolkata")).strftime("%d-%m-%Y\n⏱️ ᴇxᴘɪʀʏ ᴛɪᴍᴇ : %I:%M:%S %p")         
-            await message.reply_text(f"ᴘʀᴇᴍɪᴜᴍ👑 Added..🎗 ✔\n\n👤 ᴜꜱᴇʀ : {user.mention}\n⚡ ᴜꜱᴇʀ ɪᴅ : <code>{user_id}</code>\n⏰ ᴘʀᴇᴍɪᴜᴍ ᴀᴄᴄᴇꜱꜱ : <code>{time}</code>\n\n⏳ ᴊᴏɪɴɪɴɢ ᴅᴀᴛᴇ : {current_time}\n\n⌛️ ᴇxᴘɪʀʏ ᴅᴀᴛᴇ : {expiry_str_in_ist} \n\n__**Powered by ☣🍁BhardwajBhavit🏴‍☠️🍁__**", disable_web_page_preview=True)
+            await message.reply_text(f"ᴘʀᴇᴍɪᴜᴍ👑 Added..🎗 ✔\n\n👤 ᴜꜱᴇʀ : {user.mention}\n⚡ ᴜꜱᴇʀ ɪᴅ : <code>{user_id}</code>\n⏰ ᴘʀᴇᴍɪᴜᴍ ᴀᴄᴄᴇꜱꜱ : <code>{time}</code>\n\n⏳ ᴊᴏɪɴɪɴɢ ᴅᴀᴛᴇ : {current_time}\n\n⌛️ ᴇxᴘɪʀʏ ᴅᴀᴛᴇ : {expiry_str_in_ist} \n\n__**Powered by 🏴‍☠️🍁BhardwajBhavit🏴‍☠️🍁__**", disable_web_page_preview=True)
             await client.send_message(
                 chat_id=user_id,
                 text=f"👋 ʜᴇʏ {user.mention},\n➰ᴛʜᴀɴᴋ's For ᴘurchasing ᴘʀᴇᴍɪᴜᴍ👑.\nᴇɴᴊᴏʏ !! ✨🎉\n\n⏰ ᴘʀᴇᴍɪᴜᴍ ᴀᴄᴄᴇꜱꜱ : <code>{time}</code>\n⏳ ᴊᴏɪɴɪɴɢ ᴅᴀᴛᴇ : {current_time}\n\n⌛️ ᴇxᴘɪʀʏ ᴅᴀᴛᴇ : {expiry_str_in_ist}", disable_web_page_preview=True              
@@ -175,9 +175,9 @@ async def transfer_premium(client, message):
                 )
             )
         else:
-            await message.reply_text("☣ **First Buy Premium👑 !**\n\n❗Only Premium users can transfer plans💀.")
+            await message.reply_text("🍁 **First Buy Premium👑 !**\n\n❗Only Premium users can transfer plans💀.")
     else:
-        await message.reply_text("☣ **Usage:** /transfer user_id\n\nReplace `user_id` with the new user's ID🌩.")
+        await message.reply_text("🍁 **Usage:** /transfer user_id\n\nReplace `user_id` with the new user's ID🌩.")
 
 
 async def premium_remover():
