@@ -201,7 +201,7 @@ async def get_msg(userbot, sender, edit_id, msg_link, i, message):
             if chat in saved_channel_ids:
                 await app.edit_message_text(
                     message.chat.id, edit_id,
-                    "Sorry!💢 This channel is protected🔏 by **__🍁☣BhardwajBhavit☣🍁__**."
+                    "Sorry!💢 This channel is protected🔏 by **__🍁✨BhardwajBhavit✨🍁__**."
                 )
                 return
             
@@ -562,7 +562,7 @@ get_user_caption_preference = lambda user_id: user_caption_preferences.get(str(u
 sessions = {}
 m = None
 SET_PIC = "settings.jpg"
-MESS = "🤞➰Customize by your end and Configure your settings ...➰🤞"
+MESS = "🤞🍁Customize by your end and Configure your settings ...🍁🤞"
 
 @gf.on(events.NewMessage(incoming=True, pattern='/settings'))
 async def settings_command(event):
@@ -573,14 +573,14 @@ async def send_settings_message(chat_id, user_id):
     
     # Define the rest of the buttons
     buttons = [
-        [Button.inline("🤞Set Chat ID🤞", b'setchat'), Button.inline("✨Set Rename Tag✨", b'setrename')],
-        [Button.inline("➰Caption➰", b'setcaption'), Button.inline("🎗Replace Words🎗", b'setreplacement')],
-        [Button.inline("✨Remove Words✨", b'delete'), Button.inline("🤞Reset🤞", b'reset')],
-        [Button.inline("🎗Session Login🎗", b'addsession'), Button.inline("➰Logout➰", b'logout')],
+        [Button.inline("🤞Set Chat ID🤞", b'setchat'), Button.inline("🏴‍☠️Set Rename Tag🏴‍☠️", b'setrename')],
+        [Button.inline("❄Caption❄", b'setcaption'), Button.inline("⚜Replace Words⚜", b'setreplacement')],
+        [Button.inline("✨Remove Words✨", b'delete'), Button.inline("♻Reset♻", b'reset')],
+        [Button.inline("🔗Session Login🔗", b'addsession'), Button.inline("💢Logout💢", b'logout')],
         [Button.inline("🤞Set Thumbnail🤞", b'setthumb'), Button.inline("✨Remove Thumbnail✨", b'remthumb')],
-        [Button.inline("➰PDF Wtmrk➰", b'pdfwt'), Button.inline("💦Video Wtmrk💦", b'watermark')],
+        [Button.inline("💦PDF Wtmrk💦", b'pdfwt'), Button.inline("💦Video Wtmrk💦", b'watermark')],
         [Button.inline("✨Upload Method✨", b'uploadmethod')],  # Include the dynamic Fast DL button
-        [Button.url("☢Report Errors❗", "https://t.me/moviewalachat")]
+        [Button.url("🃏Report Errors❗", "https://t.me/moviewalachat")]
     ]
 
     await gf.send_file(
@@ -598,27 +598,27 @@ async def callback_query_handler(event):
     user_id = event.sender_id
     
     if event.data == b'setchat':
-        await event.respond("📧Send me the ID of that chat〽:")
+        await event.respond("📧Send me the ID of that chat🌻:")
         sessions[user_id] = 'setchat'
 
     elif event.data == b'setrename':
-        await event.respond("〽Send me the rename tag〽:")
+        await event.respond("🌻Send me the rename tag🌻:")
         sessions[user_id] = 'setrename'
     
     elif event.data == b'setcaption':
-        await event.respond("〽Send me the caption〽:")
+        await event.respond("🌻Send me the caption🌻:")
         sessions[user_id] = 'setcaption'
 
     elif event.data == b'setreplacement':
-        await event.respond("〽Send me the replacement words in the format: 'WORD(s)' 'REPLACEWORD'〽")
+        await event.respond("🌻Send me the replacement words in the format: 'WORD(s)' 'REPLACEWORD'🌻")
         sessions[user_id] = 'setreplacement'
 
     elif event.data == b'addsession':
-        await event.respond("〽Send Pyrogram V2 session〽")
+        await event.respond("🌻Send Pyrogram V2 session🌻")
         sessions[user_id] = 'addsession' # (If you want to enable session based login just uncomment this and modify response message accordingly)
 
     elif event.data == b'delete':
-        await event.respond("〽Send words seperated by space to delete them from caption/filename ...〽")
+        await event.respond("🌻Send words seperated by space to delete them from caption/filename ...🌻")
         sessions[user_id] = 'deleteword'
         
     elif event.data == b'logout':
@@ -631,7 +631,7 @@ async def callback_query_handler(event):
         
     elif event.data == b'setthumb':
         pending_photos[user_id] = True
-        await event.respond('〽Please send the photo you want to set as the thumbnail〽.')
+        await event.respond('🌻Please send the photo you want to set as the thumbnail🌻.')
     
     elif event.data == b'pdfwt':
         await event.respond("💦Watermark💦 is Pro+👑 Plan.. 🌻contact 🤞@BhardwajBhavit")
@@ -649,7 +649,7 @@ async def callback_query_handler(event):
             [Button.inline(f"Pyrogram v2{pyrogram_check}", b'pyrogram')],
             [Button.inline(f"BhardwajLib v1 ⚡{telethon_check}", b'telethon')]
         ]
-        await event.edit("🎗Choose your preferred upload🚀 method:\n\n__**Note:** **🐱‍👤🏴‍☠️Bhardwaj ⚡**, built on Telethon(base), by ☣🐱‍👤BhardwajBhavit🐱‍👤☣ still in beta.__", buttons=buttons)
+        await event.edit("🎗Choose your preferred upload🚀 method:\n\n__**Note:** **🏴‍☠️Bhardwaj ⚡**, built on Telethon(base), by 🍁BhardwajBhavit🍁 still in beta.__", buttons=buttons)
 
     elif event.data == b'pyrogram':
         save_user_upload_method(user_id, "Pyrogram")
@@ -657,7 +657,7 @@ async def callback_query_handler(event):
 
     elif event.data == b'telethon':
         save_user_upload_method(user_id, "Telethon")
-        await event.edit("Upload🚀 method set to **🏴‍☠️🐱‍👤Bhardwaj ⚡\n\n🤞Thanks for choosing this library❄ as it will help me to analyze the error⚠❗ raise issues on github.** ✔")        
+        await event.edit("Upload🚀 method set to **🏴‍☠️BhardwajLIB ⚡\n\n🤞Thanks for choosing this library❄ as it will help me to analyze the error⚠❗ raise issues on github.** ✔")        
         
     elif event.data == b'reset':
         try:
@@ -983,7 +983,7 @@ def progress_callback(done, total, user_id):
     # Format the final output as needed
     final = (
         f"╭──────────────────╮\n"
-        f"│     **__🐱‍👤Bhardwaj☣ 🚀Uploader🚀__**       \n"
+        f"│     **__🍁💢Bhardwaj💢🍁 🚀Uploader🚀__**       \n"
         f"├──────────\n"
         f"│ {progress_bar}\n\n"
         f"│ **__Progress:__** {percent:.2f}%\n"
@@ -991,7 +991,7 @@ def progress_callback(done, total, user_id):
         f"│ **__Speed:__** {speed_mbps:.2f} Mbps\n"
         f"│ **__ETA:__** {remaining_time_min:.2f} min\n"
         f"╰──────────────────╯\n\n"
-        f"**__Powered by 🐱‍👤BhardwajBhavit🏴‍☠️__**"
+        f"**__Powered by 💢🏴‍☠️BhardwajBhavit🏴‍☠️💢__**"
     )
     
     # Update tracking variables for the user
@@ -1046,7 +1046,7 @@ def dl_progress_callback(done, total, user_id):
     # Format the final output as needed
     final = (
         f"╭──────────────────╮\n"
-        f"│     **__🐱‍👤Bhardwaj🏴‍☠️  🌻Downloader🌻__**       \n"
+        f"│     **__🍁🏴‍☠️Bhardwaj🏴‍☠️🍁  🌻Downloader🌻__**       \n"
         f"├──────────\n"
         f"│ {progress_bar}\n\n"
         f"│ **__Progress:__** {percent:.2f}%\n"
@@ -1054,7 +1054,7 @@ def dl_progress_callback(done, total, user_id):
         f"│ **__Speed:__** {speed_mbps:.2f} Mbps\n"
         f"│ **__ETA:__** {remaining_time_min:.2f} min\n"
         f"╰──────────────────╯\n\n"
-        f"**__Powered by 🏴‍☠️☣BhardwajBhavit☣🐱‍👤__**"
+        f"**__Powered by 🏴‍☠️⚜BhardwajBhavit⚜🏴‍☠️__**"
     )
     
     # Update tracking variables for the user
