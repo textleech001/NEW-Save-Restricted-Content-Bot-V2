@@ -74,8 +74,8 @@ async def token_handler(client, message):
     user_id = message.chat.id
     if len(message.command) <= 1:
         image_url = "https://envs.sh/mT_.jpg"
-        join_button = InlineKeyboardButton("Join Channel", url="https://t.me/DM_HUB_069")
-        premium = InlineKeyboardButton("Get Premium", url="https://t.me/BhardwajBhavit")   
+        join_button = InlineKeyboardButton("🎗Join Channel🎗", url="https://t.me/DM_HUB_069")
+        premium = InlineKeyboardButton("⚜Get Premium👑", url="https://t.me/BhardwajBhavit")   
         keyboard = InlineKeyboardMarkup([
             [join_button],   
             [premium]    
@@ -84,9 +84,9 @@ async def token_handler(client, message):
         await message.reply_photo(
             image_url,
             caption=(
-                "Hi 🐱‍👤🏴‍☠️ Welcome, Wanna intro...?\n\n"
-                "☣⚔ I can save posts from channels or groups where Forwarding is OFF💀. I can download 🎥Videos 🔊Audio from YT, INSTA, ... social platforms\n\n"
-                "☣⚜  use  /token  to use Premium👑 for FREE \n\n ☣✨send post link of a public channel. For private channels, do /login.✨ \n\n Send /help to know more."
+                "Hi 💢🏴‍☠️ Welcome, Wanna intro...?\n\n"
+                "👻⚔ I can save posts from channels or groups where    FORWARDING is OFF💀.\n\n 🚀🃏I can download      🎥Videos 🔊Audio    from     YT, INSTA, ... social platforms\n\n"
+                "🤞⚜  use  /token  to use Premium👑 for FREE \n\n 🍁✨send post link of a public channel. For private channels, do /login.✨ \n\n Send /help to know more."
             ),
             reply_markup=keyboard
         )
