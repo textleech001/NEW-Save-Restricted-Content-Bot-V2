@@ -72,10 +72,10 @@ async def stats(client, message):
 🏓 **Ping Pong**: {ping}ms
 
 📊 **Total Users** : `{users}`
-📈 **Premium Users** : `{len(premium)}`
+👑 **Premium Users** : `{len(premium)}`
 ⚙️ **Bot Uptime** : `{time_formatter()}`
     
-🎨 **Python Version**: `{sys.version.split()[0]}`
+🐍 **Python Version**: `{sys.version.split()[0]}`
 📑 **Mongo Version**: `{motor.version}`
 """)
   
