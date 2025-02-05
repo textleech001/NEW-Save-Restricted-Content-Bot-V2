@@ -85,8 +85,8 @@ async def token_handler(client, message):
             image_url,
             caption=(
                 "Hi 💢🏴‍☠️ Welcome, Wanna intro...?\n\n"
-                "👻🌻~~I can save posts from channels or groups where         FORWARDING is OFF💀.\n\n 🚀🃏~~I can download      🎥Videos 🔊Audio    from     YT, INSTA, ...      social platforms\n\n"
-                "🤞⚜~~use  /token  to use Premium👑 for FREE \n\n 🍁✨~~send post link of a public channel. For private channels,       do /login.✨ \n\n 💢⚡~~Send /help to know more."
+                "👻🌻〰〰I can save posts from channels or groups where             FORWARDING is OFF💀.\n\n 🚀🃏〰〰I can download      🎥Videos 🔊Audio    from     YT, INSTA, ...            social platforms\n\n"
+                "🤞⚜〰〰use  /token  to use Premium👑 for FREE \n\n 🍁✨〰〰send post link of a public channel. For private channels,             do /login.✨ \n\n 💢⚡〰〰Send /help to know more."
             ),
             reply_markup=keyboard
         )
