@@ -162,7 +162,7 @@ async def userbot_join(userbot, invite_link):
         return "⚠Too many requests❗, try again later😕."
     except Exception as e:
         print(e)
-        return "🤨Could not join,😕 try joining manually. https://t.me/+FjnlaBYf-u8yNjU1"
+        return "🤨Could not join,😕 try joining manually. https://t.me/premiumKingProjects"
 def get_link(string):
     regex = r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))"
     url = re.findall(regex,string)   
@@ -250,7 +250,7 @@ async def progress_callback(current, total, progress_message):
     f"│ **__Progress:__** {percent:.2f}%\n"
     f"│ **__Uploaded:__** {current_mb:.2f} MB / {total_mb:.2f} MB\n"
     f"╰──────────────────╯\n\n"
-    f"**__Powered by 🍁⚜@premiumKingProjects⚜🍁__**"
+    f"**__Powered by 🍁⚜KING PROJECTS⚜🍁__**"
         )
 
         last_update_time = current_time
