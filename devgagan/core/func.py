@@ -39,14 +39,14 @@ async def subscribe(app, message):
       try:
          user = await app.get_chat_member(update_channel, message.from_user.id)
          if user.status == "kicked":
-            await message.reply_text("❗You are Banned🚫. ⚜Contact --🍁 @BhardwajBhavit")
+            await message.reply_text("❗You are Banned🚫. ⚜Contact --🍁 @PremiumThoughtsBot")
             return 1
       except UserNotParticipant:
         caption = f"🤞👻Join our channel to use the bot💢✔"
         await message.reply_photo(photo="https://envs.sh/mT_.jpg",caption=caption, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("✨🌻Join Now...💥✔", url=f"{url}")]]))
         return 1
       except Exception:
-         await message.reply_text("⚠Something Went Wrong❗. ⚜Contact us 🏴‍☠️@BhardwajBhavit ...")
+         await message.reply_text("⚠Something Went Wrong❗. ⚜Contact us 🏴‍☠️@PremiumThoughtsBot ...")
          return 1
 async def get_seconds(time_string):
     def extract_value_and_unit(ts):
@@ -250,7 +250,7 @@ async def progress_callback(current, total, progress_message):
     f"│ **__Progress:__** {percent:.2f}%\n"
     f"│ **__Uploaded:__** {current_mb:.2f} MB / {total_mb:.2f} MB\n"
     f"╰──────────────────╯\n\n"
-    f"**__Powered by 🍁⚜BhardwajBhavit⚜🍁__**"
+    f"**__Powered by 🍁⚜@premiumKingProjects⚜🍁__**"
         )
 
         last_update_time = current_time
