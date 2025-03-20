@@ -1,7 +1,7 @@
 {
   "name": "Save Restricted Content Bot master-v1 branch",
   "description": "Save Restricted Content Bot by Team SPY",
-  "logo": "https://lh3.googleusercontent.com/-HPcn7AqepNg/AAAAAAAAAAI/AAAAAAAAAAA/ALKGfknb1BkQiq-8_KUVOYcNAJ4swKivDQ/photo.jpg",
+  "logo": "https://graph.org/file/eaeda7a24a34c10c965eb-37e65ee022ba4e2a0e.jpg",
   "keywords": ["python3", "telegram", "MusicBot", "telegram-bot", "pyrogram"],
   "repository": "https://github.com/devgaganin/save_restricted-content-telegram-bot-repo",
   "success_url": "https://devgagan.in",
@@ -38,7 +38,7 @@
     },
     "PREMIUM_LIMIT": {
       "description": "Batch size for premium users",
-      "value": "500",
+      "value": "5000",
       "required": true
     },
     "STRING": {
@@ -59,8 +59,8 @@
     
     "SUDO_USERS": {
       "description": "Other Admins' IDs (optional)",
-      "value": "",
-      "required": false
+      "value": "7796913460",
+      "required": true
     },
     "CHANNEL_ID": {
       "description": "Enter Channel ID (-100) and make bot admin there",
