@@ -858,7 +858,7 @@ async def handle_large_file(file, sender, edit, caption):
         if freecheck == 1:
             reply_markup = InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("💎 Get Premium👑 to Forward", url="https://t.me/BhardwajBhardwaj")]
+                    [InlineKeyboardButton("💎 Get Premium👑 to Forward", url="https://t.me/PremiumThoughtsBot")]
                 ]
             )
             await app.copy_message(
@@ -983,7 +983,7 @@ def progress_callback(done, total, user_id):
     # Format the final output as needed
     final = (
         f"╭──────────────────╮\n"
-        f"│     **__🍁💢Bhardwaj💢🍁 🚀Uploader🚀__**       \n"
+        f"│     **__🍁💢KING💢🍁 🚀Uploader🚀__**       \n"
         f"├──────────\n"
         f"│ {progress_bar}\n\n"
         f"│ **__Progress:__** {percent:.2f}%\n"
@@ -991,7 +991,7 @@ def progress_callback(done, total, user_id):
         f"│ **__Speed:__** {speed_mbps:.2f} Mbps\n"
         f"│ **__ETA:__** {remaining_time_min:.2f} min\n"
         f"╰──────────────────╯\n\n"
-        f"**__Powered by 💢🏴‍☠️BhardwajBhavit🏴‍☠️💢__**"
+        f"**__Powered by 💢KING PROJECTS💢__**"
     )
     
     # Update tracking variables for the user
@@ -1046,7 +1046,7 @@ def dl_progress_callback(done, total, user_id):
     # Format the final output as needed
     final = (
         f"╭──────────────────╮\n"
-        f"│     **__🍁🏴‍☠️Bhardwaj🏴‍☠️🍁  🌻Downloader🌻__**       \n"
+        f"│     **__🍁🏴‍☠️KING🏴‍☠️🍁  🌻Downloader🌻__**       \n"
         f"├──────────\n"
         f"│ {progress_bar}\n\n"
         f"│ **__Progress:__** {percent:.2f}%\n"
@@ -1054,7 +1054,7 @@ def dl_progress_callback(done, total, user_id):
         f"│ **__Speed:__** {speed_mbps:.2f} Mbps\n"
         f"│ **__ETA:__** {remaining_time_min:.2f} min\n"
         f"╰──────────────────╯\n\n"
-        f"**__Powered by 🏴‍☠️⚜BhardwajBhavit⚜🏴‍☠️__**"
+        f"**__Powered by ⚜KING PROJECTS⚜__**"
     )
     
     # Update tracking variables for the user
