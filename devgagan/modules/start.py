@@ -110,7 +110,7 @@ help_pages = [
         "> 4. REPLACEWORDS : 〽Can be used for words in deleted set via REMOVE WORDS〽\n"
         "> 5. RESET : ☣To Reset Settings⚙ Default☣\n\n"
         "> ⚜You can set ✔~CUSTOM THUMBNAIL~, ✔~PDF WATERMARK~, ✔~VIDEO WATERMARK~, ✔~SESSION-based login~, etc. from settings⚙\n\n"
-        "**__Powered by 🏴‍☠️✨Bhardwaj Bhavit✨🏴‍☠️__**"
+        "**__Powered by 🏴‍☠️✨KING PROJECTS✨🏴‍☠️__**"
     )
 ]
  
