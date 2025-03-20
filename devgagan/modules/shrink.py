@@ -75,7 +75,7 @@ async def token_handler(client, message):
     if len(message.command) <= 1:
         image_url = "https://envs.sh/mT_.jpg"
         join_button = InlineKeyboardButton("🎗Join Channel🎗", url="https://t.me/DM_HUB_069")
-        premium = InlineKeyboardButton("⚜Get Premium👑", url="https://t.me/BhardwajBhavit")   
+        premium = InlineKeyboardButton("⚜Get Premium👑", url="https://t.me/premiumKingProjects")   
         keyboard = InlineKeyboardMarkup([
             [join_button],   
             [premium]    
@@ -136,7 +136,7 @@ async def smart_handler(client, message):
          
         shortened_url = await get_shortened_url(deep_link)
         if not shortened_url:
-            await message.reply("😭can't Genrate Token.? contact🍁 @BhardwajBhavit 🍁.")
+            await message.reply("😭can't Genrate Token.? contact🍁 @PremiumThoughtsBot 🍁.")
             return
  
          
