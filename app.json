@@ -59,7 +59,7 @@
     
     "SUDO_USERS": {
       "description": "Other Admins' IDs (optional)",
-      "value": "7796913460",
+      "value": "",
       "required": true
     },
     "CHANNEL_ID": {
