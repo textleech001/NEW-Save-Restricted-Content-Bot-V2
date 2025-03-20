@@ -550,7 +550,7 @@ user_caption_preferences = {}
 async def set_rename_command(user_id, custom_rename_tag):
     user_rename_preferences[str(user_id)] = custom_rename_tag
 
-get_user_rename_preference = lambda user_id: user_rename_preferences.get(str(user_id), 'BhardwajBhavit')
+get_user_rename_preference = lambda user_id: user_rename_preferences.get(str(user_id), 'KINGPROJECTS')
 
 async def set_caption_command(user_id, custom_caption):
     user_caption_preferences[str(user_id)] = custom_caption
@@ -580,7 +580,7 @@ async def send_settings_message(chat_id, user_id):
         [Button.inline("Set Thumbnail", b'setthumb'), Button.inline("Remove Thumbnail", b'remthumb')],
         [Button.inline("PDF Wtmrk", b'pdfwt'), Button.inline("Video Wtmrk", b'watermark')],
         [Button.inline("Upload Method", b'uploadmethod')],  # Include the dynamic Fast DL button
-        [Button.url("🃏Report Errors❗", "https://t.me/moviewalachat")]
+        [Button.url("🃏Report Errors❗", "https://t.me/PremiumThoughtsBot")]
     ]
 
     await gf.send_file(
@@ -858,7 +858,7 @@ async def handle_large_file(file, sender, edit, caption):
         if freecheck == 1:
             reply_markup = InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("💎 Get Premium👑 to Forward", url="https://t.me/PremiumThoughtsBot")]
+                    [InlineKeyboardButton("💎 Get Premium👑 to Forward", url= "https://t.me/PremiumThoughtsBot")]
                 ]
             )
             await app.copy_message(
