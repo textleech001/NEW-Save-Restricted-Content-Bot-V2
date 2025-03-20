@@ -201,7 +201,7 @@ async def get_msg(userbot, sender, edit_id, msg_link, i, message):
             if chat in saved_channel_ids:
                 await app.edit_message_text(
                     message.chat.id, edit_id,
-                    "Sorry!💢 This channel is protected🔏 by **__🍁✨@PremiumThoughtsBot✨🍁__**."
+                    "Sorry!💢 This channel is protected🔏 by **__✨KING PROJECTS✨__**."
                 )
                 return
             
@@ -562,7 +562,7 @@ get_user_caption_preference = lambda user_id: user_caption_preferences.get(str(u
 sessions = {}
 m = None
 SET_PIC = "settings.jpg"
-MESS = "🤞🍁Customize by your end and Configure your settings ...🍁🤞"
+MESS = "🤞🍁Customize your settings ...🍁🤞"
 
 @gf.on(events.NewMessage(incoming=True, pattern='/settings'))
 async def settings_command(event):
@@ -634,7 +634,7 @@ async def callback_query_handler(event):
         await event.respond('🌻Please send the photo you want to set as the thumbnail🌻.')
     
     elif event.data == b'pdfwt':
-        await event.respond("💦Watermark💦 is Pro+👑 Plan.. 🌻contact 🤞@BhardwajBhavit")
+        await event.respond("💦Watermark💦 is Pro+👑 Plan.. 🌻contact 🤞@PremiumThoughtsBot")
         return
 
     elif event.data == b'uploadmethod':
@@ -649,7 +649,7 @@ async def callback_query_handler(event):
             [Button.inline(f"Pyrogram v2{pyrogram_check}", b'pyrogram')],
             [Button.inline(f"BhardwajLib v1 ⚡{telethon_check}", b'telethon')]
         ]
-        await event.edit("🎗Choose your preferred upload🚀 method:\n\n__**Note:** **🏴‍☠️Bhardwaj ⚡**, built on Telethon(base), by 🍁BhardwajBhavit🍁 still in beta.__", buttons=buttons)
+        await event.edit("🎗Choose your preferred upload🚀 method:\n\n__**Note:** **🏴‍☠️KING ⚡**, built on Telethon(base), by 🍁KING PROJECTS🍁 still in beta.__", buttons=buttons)
 
     elif event.data == b'pyrogram':
         save_user_upload_method(user_id, "Pyrogram")
@@ -657,7 +657,7 @@ async def callback_query_handler(event):
 
     elif event.data == b'telethon':
         save_user_upload_method(user_id, "Telethon")
-        await event.edit("Upload🚀 method set to **🏴‍☠️BhardwajLIB ⚡\n\n🤞Thanks for choosing this library❄ as it will help me to analyze the error⚠❗ raise issues on github.** ✔")        
+        await event.edit("Upload🚀 method set to **🏴‍☠️KING PROJECTS ⚡\n\n🤞Thanks for choosing this library❄ as it will help me to analyze the error⚠❗ raise issues on github.** ✔")        
         
     elif event.data == b'reset':
         try:
