@@ -116,7 +116,7 @@ async def process_audio(client, event, url, cookies_path=None):
                 name=None,
                 progress_bar_function=lambda done, total: progress_callback(done, total, chat_id)
             )
-            await client.send_file(chat_id, uploaded, caption=f"**{title}**\n\n**__🏴‍☠️Powered by ⚜Bhardwaj⚜__**")
+            await client.send_file(chat_id, uploaded, caption=f"**{title}**\n\n**__🏴‍☠️Powered by ⚜KING PROJECTS⚜__**")
             if prog:
                 await prog.delete()
         else:
@@ -159,7 +159,7 @@ async def process_video(client, event, url, cookies_path=None, check_duration_an
             return
 
         await asyncio.to_thread(download_video, url, ydl_opts)
-        title = info_dict.get('title', 'Powered by 🍁Bhardwaj🍁')
+        title = info_dict.get('title', 'Powered by 🍁KING PROJECTS🍁')
         k = video_metadata(download_path)
         W = k['width']
         H = k['height']
