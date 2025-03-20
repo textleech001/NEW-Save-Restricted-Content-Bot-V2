@@ -6,7 +6,7 @@ from os import getenv
 API_ID = int(getenv("API_ID", "23680771"))
 API_HASH = getenv("API_HASH", "0c58f3e3fecefc4a9d8e5bcf6968a106")
 BOT_TOKEN = getenv("BOT_TOKEN", "")
-OWNER_ID = list(map(int, getenv("OWNER_ID", "7796913460").split()))
+OWNER_ID = list(map(int, getenv("OWNER_ID", "").split()))
 MONGO_DB = getenv("MONGO_DB", "")
 LOG_GROUP = getenv("LOG_GROUP", "-1002611183621")
 CHANNEL_ID = int(getenv("CHANNEL_ID", "-1002543707369"))
